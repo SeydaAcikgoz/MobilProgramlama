@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "695042068176",
+    "project_id": "onlinealisveris-7848e",
+    "storage_bucket": "onlinealisveris-7848e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695042068176:android:db9c8ff5a098d9532958d5",
+        "android_client_info": {
+          "package_name": "com.example.onlinealisveris"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcZSjV0HOz_bWlLbS3VvRwG2Y3WzmQxNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
