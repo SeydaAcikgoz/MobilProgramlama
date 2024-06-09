@@ -1,6 +1,7 @@
 package com.example.onlinealisveris.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.onlinealisveris.Activity.DetailActivity;
 import com.example.onlinealisveris.Domain.ItemsDomain;
 import com.example.onlinealisveris.databinding.ViewholderPopListBinding;
 
@@ -35,7 +37,7 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.Viewhold
 
     @Override
     public void onBindViewHolder(@NonNull PopularAdapter.Viewholder holder, int position) {
-        holder.binding.title.setText(items.get(position).getTitle());
+        holder.binding.titleTxt.setText(items.get(position).getTitle());
         holder.binding.reviewTxt.setText(""+ items.get(position).getReview());
         holder.binding.priceTxt.setText("$"+ items.get(position).getPrice());
         holder.binding.ratingTxt.setText("("+ items.get(position).getRating() + ")");
@@ -54,7 +56,9 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.Viewhold
         holder.itemView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                Intent intent = new Intent(context, DetailActivity.class);
+                intent.putExtra("object",items.get(position));
+                context.startActivity(intent);
             }
         });
 

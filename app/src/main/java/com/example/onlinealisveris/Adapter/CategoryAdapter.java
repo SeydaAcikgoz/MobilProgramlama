@@ -32,7 +32,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Viewho
 
     @Override
     public void onBindViewHolder(@NonNull CategoryAdapter.Viewholder holder, int position) {
-        holder.binding.title.setText(items.get(position).getTitle());
+        holder.binding.titleTxt.setText(items.get(position).getTitle());
 
         Glide.with(context)
                 .load(items.get(position).getPicUrl())

@@ -11,7 +11,7 @@ public class ItemsDomain implements Serializable {
     private double oldPrice;
     private int review;
     private double rating;
-    private int numberInCart;
+    private int NumberinCart;
 
     public String getTitle() {
         return title;
@@ -69,12 +69,12 @@ public class ItemsDomain implements Serializable {
         this.rating = rating;
     }
 
-    public int getNumberInCart() {
-        return numberInCart;
+    public int getNumberinCart() {
+        return NumberinCart;
     }
 
-    public void setNumberInCart(int numberInCart) {
-        this.numberInCart = numberInCart;
+    public void setNumberinCart(int numberinCart) {
+        this.NumberinCart = numberinCart;
     }
 
     public ItemsDomain(String title, String description, ArrayList<String> picUrl, double price, double oldPrice, int review, double rating) {

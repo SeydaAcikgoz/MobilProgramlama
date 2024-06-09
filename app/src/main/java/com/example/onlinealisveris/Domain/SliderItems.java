@@ -2,6 +2,12 @@ package com.example.onlinealisveris.Domain;
 
 public class SliderItems {
     private String url;
+    public SliderItems() {
+    }
+
+    public SliderItems(String url) {
+        this.url = url;
+    }
 
     public void setUrl(String url) {
         this.url = url;
@@ -11,6 +17,5 @@ public class SliderItems {
         return url;
     }
 
-    public SliderItems() {
-    }
+
 }
